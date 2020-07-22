@@ -15,20 +15,22 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "gatsby": "^2.19.12",
-    "gatsby-plugin-manifest": "^2.2.41",
+    "gatsby": "^2.24.8",
+    "gatsby-plugin-manifest": "^2.4.20",
+    "gatsby-plugin-netlify-cms": "^4.3.11",
     "gatsby-theme-amsterdam": "^1.0.5",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "netlify-cms-app": "^2.12.18",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "eslint": "6.8.0",
+    "eslint": "7.5.0",
     "eslint-config-gatsby-standard": "^2.2.0",
-    "prettier": "^1.19.1",
-    "stylelint": "13.0.0",
-    "stylelint-config-prettier": "^8.0.1",
-    "stylelint-config-standard": "^19.0.0",
+    "prettier": "^2.0.5",
+    "stylelint": "13.6.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0",
     "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-processor-styled-components": "^1.9.0"
+    "stylelint-processor-styled-components": "^1.10.0"
   }
 }

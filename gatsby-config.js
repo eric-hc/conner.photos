@@ -19,8 +19,8 @@ module.exports = {
     ],
     footerLinks: [
       {
-        name: 'Gatsby Theme Amsterdam',
-        url: 'https://github.com/ryanwiemer/gatsby-theme-amsterdam',
+        name: 'GitHub',
+        url: 'https://github.com',
       },
     ],
   },

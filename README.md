@@ -1,7 +1,5 @@
-# Gatsby Starter Amsterdam
+## conner.page
+Code that builds a site for my wife
 
-A basic starter using **Gatsby Theme Amsterdam**.
-
-- [Theme Documentation](https://github.com/ryanwiemer/gatsby-theme-amsterdam)
-- [Theme Website](https://amsterdam.netlify.com/)
-- [Demo](https://gatsby-starter-amsterdam.netlify.com/)
+## Acknowledgements
+[@ryanwiemer](https://github.com/ryanwiemer)'s [Gatsby theme](https://github.com/ryanwiemer/gatsby-theme-amsterdam)
