@@ -41,5 +41,7 @@ module.exports = {
         icon: require.resolve('./src/images/favicon.png'),
       },
     },
+    `gatsby-theme-amsterdam`, 
+    `gatsby-plugin-netlify-cms`,
   ],
 }
