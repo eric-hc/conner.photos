@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: eric-hc/conner.photos
+  branch: main
 media_folder: static/media
 public_folder: /media
 collections:
