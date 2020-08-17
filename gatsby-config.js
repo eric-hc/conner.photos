@@ -17,7 +17,7 @@ try {
 
 module.exports = {
   siteMetadata: {
-    title: 'Conner Photos',
+    title: 'Conner Parker Photos',
     description:
       'Website for Conner\'s photos',
     siteUrl: 'https://conner.photos',
@@ -82,8 +82,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'GCN',
-        short_name: 'GCN',
+        name: 'Conner Parker Photos',
+        short_name: 'Conner\'s Photos',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#ffffff',
