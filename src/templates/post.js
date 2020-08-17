@@ -8,10 +8,14 @@ import TagList from '../components/TagList'
 import PostLinks from '../components/PostLinks'
 import PostDetails from '../components/PostDetails'
 import SEO from '../components/SEO'
+import Gallery from '@browniebroke/gatsby-image-gallery'
+import '@browniebroke/gatsby-image-gallery/dist/style.css'
 
 const PostTemplate = ({ data, pageContext }) => {
   const {
     title,
+    location,
+    album,
     metaDescription,
     heroImage,
     body,
@@ -46,9 +50,10 @@ const PostTemplate = ({ data, pageContext }) => {
         {tags && <TagList tags={tags} basePath={basePath} />}
         <PostDetails
           date={publishDate}
-          timeToRead={body.childMarkdownRemark.timeToRead}
+          location={location}
         />
-        <PageBody body={body} />
+        {/* <PageBody body={body} /> */}
+        <Gallery images={album} />
       </Container>
       <PostLinks previous={previous} next={next} basePath={basePath} />
     </Layout>
@@ -59,12 +64,8 @@ export const query = graphql`
   query($slug: String!) {
     contentfulPost(slug: { eq: $slug }) {
       title
+      location
       slug
-      metaDescription {
-        internal {
-          content
-        }
-      }
       publishDate(fromNow: true)
       publishDateISO: publishDate(formatString: "YYYY-MM-DD")
       tags {
@@ -83,9 +84,16 @@ export const query = graphql`
       }
       body {
         childMarkdownRemark {
-          timeToRead
           html
           excerpt(pruneLength: 320)
+        }
+      }
+      album {
+        full: fluid {
+          ...GatsbyContentfulFluid
+        }
+        thumb: fluid(maxWidth: 270, maxHeight: 270) {
+          ...GatsbyContentfulFluid
         }
       }
     }

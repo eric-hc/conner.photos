@@ -20,7 +20,7 @@ const ReadingTime = styled.p`
 const PostDetails = props => {
   return (
     <Wrapper>
-      <Date>{props.date}</Date>
+      <Date>{props.date}</Date> in {props.location}
     </Wrapper>
   )
 }
