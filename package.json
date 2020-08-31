@@ -5,6 +5,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.27",
     "@emotion/styled": "^10.0.27",
+    "@theme-ui/presets": "^0.3.0",
     "babel-plugin-styled-components": "^1.10.7",
     "chalk": "^3.0.0",
     "contentful-import": "^7.6.2",

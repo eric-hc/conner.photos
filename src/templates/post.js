@@ -34,6 +34,10 @@ const PostTemplate = ({ data, pageContext }) => {
     ogImage = null
   }
 
+  const lightboxOptions = {
+    // discourageDownloads: true
+  }
+
   return (
     <Layout>
       <SEO
@@ -53,9 +57,9 @@ const PostTemplate = ({ data, pageContext }) => {
           location={location}
         />
         {/* <PageBody body={body} /> */}
-        <Gallery images={album} />
+        <Gallery images={album} lightboxOptions={lightboxOptions} />
       </Container>
-      <PostLinks previous={previous} next={next} basePath={basePath} />
+      {/* <PostLinks previous={previous} next={next} basePath={basePath} /> */}
     </Layout>
   )
 }
@@ -75,7 +79,7 @@ export const query = graphql`
       }
       heroImage {
         title
-        fluid(maxWidth: 1800) {
+        fluid(maxWidth: 1800, quality: 100) {
           ...GatsbyContentfulFluid_withWebp_noBase64
         }
         ogimg: resize(width: 1800) {
@@ -89,10 +93,10 @@ export const query = graphql`
         }
       }
       album {
-        full: fluid {
-          ...GatsbyContentfulFluid
+        full: fluid(maxWidth: 1200, quality: 100) {
+          ...GatsbyContentfulFluid_withWebp_noBase64
         }
-        thumb: fluid(maxWidth: 270, maxHeight: 270) {
+        thumb: fluid(maxWidth: 1200, maxHeight: 1200, quality: 100) {
           ...GatsbyContentfulFluid
         }
       }

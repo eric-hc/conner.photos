@@ -55,7 +55,8 @@ module.exports = {
           {
             resolve: `gatsby-remark-images-contentful`,
             options: {
-              maxWidth: 650,
+              // maxWidth: 650,
+              withWebp: true,
               backgroundColor: 'white',
               linkImagesToOriginal: false,
             },
