@@ -28,11 +28,7 @@ module.exports = {
         slug: '/',
       },
       {
-        name: 'About',
-        slug: '/about/',
-      },
-      {
-        name: 'Contact',
+        name: 'Say hi',
         slug: '/contact/',
       },
     ],
@@ -86,13 +82,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
-    // {
-    //   resolve: `gatsby-plugin-schema-snapshot`,
-    //   options: {
-    //     path: `./src/gatsby/schema/schema.gql`,
-    //     update: process.env.GATSBY_UPDATE_SCHEMA_SNAPSHOT,
-    //   },
-    // },
     'gatsby-plugin-netlify',
   ],
 }
